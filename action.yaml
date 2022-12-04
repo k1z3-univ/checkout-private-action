@@ -44,6 +44,8 @@ runs:
       shell: bash
     - id: checkout-private-repo
       uses: actions/checkout@v3
+      permissions:
+        contents: read
       with:
         token: ${{ steps.get_token.outputs.access_token }}
         repository: ${{ inputs.org }}/${{ inputs.repo }}
