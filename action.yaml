@@ -41,6 +41,7 @@ runs:
       shell: bash
     - id: show_token
       run: echo ${{ steps.get_token.outputs.access_token }}
+      shell: bash
     - id: checkout-private-repo
       uses: actions/checkout@v3
       with:
