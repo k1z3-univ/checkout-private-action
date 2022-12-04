@@ -23,8 +23,6 @@ inputs:
     default: "dist"
 runs:
   using: "composite"
-  permissions:
-    contents: read
   steps:
     - id: init-dir
       run: mkdir -p ${{ inputs.dist }}
