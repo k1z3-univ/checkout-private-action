@@ -1,5 +1,8 @@
 name: 'checkout private action'
 description: 'checkout private repo via github apps to use private repo github action code'
+permissions:
+  id-token: write
+  contents: read
 inputs:
   app_id:
     description: 'github apps id'
